@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>home</title>
+  </head>
+   <body>
+      <H1>Hello!<H1> 
+      <H2>Wellcome to Movie Database System</H2>
+      <br>
+      <button onclick="home()">Home</button>
+          <script>
+          function home() {
+          fetch('/home', {method: 'POST'})
+          window.location.href = '/home';
+          }
+          </script>
+      <br>
+      <button onclick="create()">Create Page</button>
+          <script>
+          function create() {
+          fetch('/create', {method: 'POST'})
+          window.location.href = '/create';
+          }
+          </script>
+      <br>
+      <button onclick="showAll()">Show All Movies Page</button>
+          <script>
+          function showAll() {
+          fetch('/showAll', {method: 'POST'})
+          window.location.href = '/showAll';
+          }
+          </script>
+      <br>
+      <button onclick="logout()">Logout</button>
+          <script>
+          function logout() {
+          fetch('/logout', {method: 'POST'})
+          window.location.href = '/login';
+          }
+          </script>
+      <br>
+   </body>
+</html>

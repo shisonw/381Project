@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Show us the authentic update of this movie!</title>
+  </head> 
+  <body>
+    <form action="/uplaod/:id" method="POST">
+      <div class="form-outline mb-4">
+        <label class="form-label" for="film">Movie name:</label>
+        <input type="text" id="film" class = "form form-control" name="film" value="<%= result.film%>" required><br><br> 
+      </div>
+
+      <div class="form-outline mb-4">
+        <label class="form-label" for="director">Director:</label>
+        <input type="text" id="director" class = "form form-control" name="director" value="<%= result.director %>" required><br><br>
+      </div>
+
+      <div class="form-outline mb-4">
+        <label class="form-label" for="year">Year:</label>
+        <input type="text" id="year" class = "form form-control" name="year" value="<%= result.year%>" required><br><br>
+      </div>
+
+      <div class="form-outline mb-4">
+        <label class="form-label" for="box">Box Office:</label>
+        <input type="text" id="box" class = "form form-control" name="box" value="<%= result.box%>" required><br><br>
+      </div>
+      <button type="update">Update</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Upload the details of this movie!</title>
+  </head> 
+  <body>
+    <h1>Details :</h1>
+    <form action="/create" method="POST">
+      <div class="form-outline mb-4">
+        <label class="form-label" for="film">Movie name:</label>
+        <input type="text" id="film" class = "form form-control" name="film" required><br><br> 
+      </div>
+
+      <div class="form-outline mb-4">
+        <label class="form-label" for="director">Director:</label>
+        <input type="text" id="director" class = "form form-control" name="director" ><br><br>
+      </div>
+
+      <div class="form-outline mb-4">
+        <label class="form-label" for="year">Year:</label>
+        <input type="text" id="year" class = "form form-control" name="year" required><br><br>
+      </div>
+
+      <div class="form-outline mb-4">
+        <label class="form-label" for="box">Box Office:</label>
+        <input type="text" id="box" class = "form form-control" name="box" ><br><br>
+      </div>
+      <button type="submit">Upload</button>
+    </form>
+  </body>
+</html>
